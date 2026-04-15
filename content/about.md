@@ -3,6 +3,7 @@ title: "About Me"
 layout: "single"
 url: "/about/"
 summary: "about"
+ShowToc: false
 ---
 
 一个纯野生程序员。
