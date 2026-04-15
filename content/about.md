@@ -5,6 +5,25 @@ url: "/about/"
 summary: "about"
 ---
 
-Hi, I'm **baojiliu**.
+## Hi, I'm baojiliu
 
-You can find me on [GitHub](https://github.com/baojiliu) or reach me via [email](mailto:baoji.liu@gmail.com).
+一个没有高学历加持的野生程序员。
+
+13、14岁的时候，别的小孩在网吧打游戏，我也在网吧——不过我在研究这破电脑到底是怎么运行的。从此一发不可收拾，走上了一条不归路。
+
+没有科班背景，没有名校光环，靠的就是一腔热血和搜索引擎。别人是站在巨人的肩膀上，我是踩着 Stack Overflow 爬上来的。
+
+写代码纯粹是因为热爱。就像有人喜欢钓鱼，有人喜欢爬山，我喜欢对着屏幕敲键盘，然后看着程序跑起来——那种快感，比吃火锅还爽。
+
+编程之于我，不是工作，是信仰。Bug 之于我，不是敌人，是老朋友。
+
+---
+
+> "学历决定了起点，但热爱决定了你能走多远。"
+> 
+> —— 我自己说的
+
+---
+
+- [GitHub](https://github.com/baojiliu)
+- [Email](mailto:baoji.liu@gmail.com)
