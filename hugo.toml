@@ -13,6 +13,7 @@ paginate = 5
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   ShowToc = true
+  comments = true
 
   [params.homeInfoParams]
     Title = "Welcome"
