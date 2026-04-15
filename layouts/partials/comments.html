@@ -1,16 +1,46 @@
-<script src="https://giscus.app/client.js"
-    data-repo="baojiliu/baojiliu.github.io"
-    data-repo-id="R_kgDOSDSHTg"
-    data-category="General"
-    data-category-id="DIC_kwDOSDSHTs4C65Zh"
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="bottom"
-    data-theme="preferred_color_scheme"
-    data-lang="zh-CN"
-    data-loading="lazy"
-    crossorigin="anonymous"
-    async>
+<div id="giscus-container">
+  <script src="https://giscus.app/client.js"
+      data-repo="baojiliu/baojiliu.github.io"
+      data-repo-id="R_kgDOSDSHTg"
+      data-category="General"
+      data-category-id="DIC_kwDOSDSHTs4C65Zh"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="bottom"
+      data-theme="dark"
+      data-lang="zh-CN"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async>
+  </script>
+</div>
+
+<script>
+  function getGiscusTheme() {
+    return document.body.className.includes('dark') ? 'dark' : 'light';
+  }
+
+  function setGiscusTheme() {
+    const iframe = document.querySelector('iframe.giscus-frame');
+    if (!iframe) return;
+    iframe.contentWindow.postMessage(
+      { giscus: { setConfig: { theme: getGiscusTheme() } } },
+      'https://giscus.app'
+    );
+  }
+
+  // Set initial theme once giscus loads
+  const observer = new MutationObserver(() => {
+    if (document.querySelector('iframe.giscus-frame')) {
+      setGiscusTheme();
+      observer.disconnect();
+    }
+  });
+  observer.observe(document.getElementById('giscus-container'), { childList: true });
+
+  // Watch for PaperMod theme toggle
+  const bodyObserver = new MutationObserver(setGiscusTheme);
+  bodyObserver.observe(document.body, { attributes: true, attributeFilter: ['class'] });
 </script>
