@@ -23,6 +23,10 @@ paginate = 5
     name = "github"
     url = "https://github.com/baojiliu"
 
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:baoji.liu@gmail.com"
+
 [menu]
   [[menu.main]]
     identifier = "archives"
