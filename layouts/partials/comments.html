@@ -2,7 +2,7 @@
 
 <script>
   function getGiscusTheme() {
-    return document.body.className.includes('dark') ? 'dark' : 'light';
+    return document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
   }
 
   function loadGiscus() {
@@ -36,7 +36,7 @@
 
   loadGiscus();
 
-  // Watch for PaperMod theme toggle
+  // Watch for PaperMod theme toggle (changes data-theme on <html>)
   new MutationObserver(setGiscusTheme)
-    .observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    .observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 </script>
